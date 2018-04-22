@@ -294,7 +294,7 @@ public:
     model->predict(img, predicted_label, predicted_confidence);
     @endcode
      */
-    CV_WRAP void predict(InputArray src, CV_OUT int &label, CV_OUT double &confidence) const;
+    void predict(InputArray src, CV_OUT int &label, CV_OUT double &confidence) const;
 
 
     /** @brief - if implemented - send all result of prediction to collector that can be used for somehow custom result handling
